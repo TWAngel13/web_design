@@ -1,0 +1,90 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: rgb(237, 105, 147);
+	--text: #000000;
+	--regular-text: 16px;
+	--lineheight: 1.65;
+	--userfont: Montserrat; 
+	--systemfont: Montserrat, PlayfairDisplay;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/Montserrat-Regular.woff2") format("woff2"); font-family: "Montserrat"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"); font-family: "PlayfairDisplay"; font-weight: 400; font-style: normal; }
+
+/* GENERAL CSS SETTINGS */
+
+/* ::placeholder { color: #000000; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; } */
+
+body {
+	background-color: #ffffff;
+	/* font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden; */
+}
+
+/* USER STYLES */
+
+.container.nav
+{
+	font-family: PlayfairDisplay;
+	color: #000000;
+}
+.navbar-nav {
+    display:table;
+    width:100%;
+    margin: 0;
+}
+.navbar-nav > li {
+    float:none;
+    display:table-cell;
+    text-align:center;
+}
+
+/* .image {
+	max-width: 100%;
+	margin-bottom: var(--bs-gutter-x);
+	border-radius: 4px;
+}
+
+.accent {
+	color: var(--accent);
+	font-weight: bold;
+}
+
+.text {
+	position: absolute;
+width: 660px;
+height: 182.02px;
+left: 621px;
+top: 410.23px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 156.9%;
+
+display: flex;
+align-items: center;
+letter-spacing: 0.115em;
+
+color: #000000;
+
+} */
