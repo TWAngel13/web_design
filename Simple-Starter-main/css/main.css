@@ -181,6 +181,130 @@ body {
     font-weight: 600;
 }
 
+.scr3
+{
+    background-color: white;
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.scr3-title-col
+{
+    font-family: 'PlayfairDisplay';
+    font-size: xx-large;
+    text-decoration: underline;
+    /* font-weight: 550; */
+    letter-spacing: 0.1em;
+    padding-bottom: 2vh;
+}
+
+.scr3-text-col
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156.9%;
+    /* or 31px */
+
+    letter-spacing: 0.1em;
+
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+}
+
+.scr3-h
+{
+    display: block;
+}
+
+.scr3-v
+{
+    display: none;
+    background-image: url("../images/process_v.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    max-width: 400px;
+    min-height: 1200px;
+}
+
+@media screen and (max-width: 1100px)
+{
+    .scr3-h {display: none;}
+    .scr3-v {display: block;}
+}
+
+.scr3-tip-col
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156.9%;
+    text-align: center;
+
+    letter-spacing: 0.1em;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.scr3-tip-col-v-l
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156.9%;
+    text-align: left;
+
+    letter-spacing: 0.1em;
+
+    padding-top: 110px;
+    padding-bottom: 15px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.scr3-tip-col-v-r
+{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156.9%;
+    text-align: right;
+
+    letter-spacing: 0.1em;
+
+    padding-top: 110px;
+    padding-bottom: 15px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.scr3-row-tip-bottom
+{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.scr3-img-col
+{
+    text-align: center;
+}
+
+.scr3-img-h
+{
+    width:75vw;
+}
+
 .scr-end
 {
     background-image: url("../images/footer_bg.png");
