@@ -319,14 +319,17 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
 
     display: flex;
+    justify-content: center;
     align-items: center;
     letter-spacing: 1px;
+    line-height: 2.5;
+    height: 100%;
 
     padding-top: 2vh;
-    padding-bottom: 5vh;
-    margin: auto;
+    padding-bottom: 2vh;
    
     color: #FFFFFF
 }
