@@ -21,9 +21,15 @@
 
 /* GENERAL CSS SETTINGS */
 
-body {
+body 
+{
 	background-color: #ffffff;
     overflow-x: hidden;
+}
+
+a
+{
+    appearance: button;
 }
 
 /* USER STYLES */
