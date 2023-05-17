@@ -1,6 +1,11 @@
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
 
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
 
-document.getElementById('orderButton').onclick = () =>
+/*document.getElementById('orderButton').onclick = () =>
 {
     if (!document.getElementById('nameInput').value || !document.getElementById('phoneInput').value || !document.getElementById('emailInput').value)
     {
@@ -14,4 +19,4 @@ document.getElementById('orderButton').onclick = () =>
     {
         alert('"' + document.getElementById('emailInput').value + '" не является корректным адресом электронной почты');
     }
-}
+}*/

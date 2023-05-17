@@ -411,12 +411,27 @@
                         <input id="emailInput" type="email" class="scr-end-window-input" placeholder="Адрес электронной почты">
                     </div>
                     <div class="row scr-end-window-button-row">
-                        <button id= "orderButton" class="scr-end-window-button">Получить бесплатную консультацию</button>
+                        <button type="button" id= "orderButton" class="btn scr-end-window-button" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить бесплатную консультацию</button>
                     </div>
                     
                 </div>
             </div>
         </div>
+  
+  <!-- Модальное окно -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Спасибо за обращение!</h5>
+        </div>
+        <div class="modal-body">Мы скоро свяжемся с Вами.</div>
+        <div class="modal-footer">
+          <button type="button" class="btn scr-end-window-button" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
         <div class="row scr-end-footer" style="flex: 0 1 auto;">
             <div class="col-lg-4">
                 КОНТАКТЫ<br>
