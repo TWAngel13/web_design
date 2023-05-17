@@ -1,22 +1,18 @@
-const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
-
-/*document.getElementById('orderButton').onclick = () =>
+document.getElementById('orderButton').onclick = () =>
 {
     if (!document.getElementById('nameInput').value || !document.getElementById('phoneInput').value || !document.getElementById('emailInput').value)
     {
-        alert('Пожалуйста, заполните все поля')
+        document.getElementById('exampleModalLabel').textContent = 'Ошибка!';
+        document.getElementById('exampleModalContent').textContent = 'Пожалуйста, заполните все поля.';
     }
     else if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById('emailInput').value))
     {
-        alert('Ваша заявка принята!');
+        document.getElementById('exampleModalLabel').textContent = 'Спасибо за обращение!';
+        document.getElementById('exampleModalContent').textContent = 'Мы скоро свяжемся с Вами.';
     }
     else
     {
-        alert('"' + document.getElementById('emailInput').value + '" не является корректным адресом электронной почты');
+        document.getElementById('exampleModalLabel').textContent = 'Ошибка!';
+        document.getElementById('exampleModalContent').textContent = '"' + document.getElementById('emailInput').value + '" не является корректным адресом электронной почты';
     }
-}*/
+}
