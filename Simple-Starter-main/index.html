@@ -26,31 +26,31 @@
 </head>
 
 <body>
-    <div class="scr1">
+    <div id="main" class="scr1">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid align-items-sm-start">
                     <a href="#" class="navbar-brand">
-                        <img src="images/logo.png" height="180">
+                        <img class="navbar-logo" src="images/logo.png">
                     </a>
                     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse py-lg-3" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link active">ГЛАВНАЯ</a>
+                            <a href="#main" class="nav-item nav-link active">ГЛАВНАЯ</a>
                         </div>
                         <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link">УСЛУГИ</a>
+                            <a href="#service" class="nav-item nav-link">УСЛУГИ</a>
                         </div>
                         <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link">МАГАЗИН</a>
+                            <a href="#shop" class="nav-item nav-link">МАГАЗИН</a>
                         </div>
                         <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link">ГАЛЕРЕЯ РАБОТ</a>
+                            <a href="#gallery" class="nav-item nav-link">ГАЛЕРЕЯ РАБОТ</a>
                         </div>
                         <div class="navbar-nav ms-auto">
-                            <a href="#" class="nav-item nav-link">КОНТАКТЫ</a>
+                            <a href="#contact" class="nav-item nav-link">КОНТАКТЫ</a>
                         </div>
                     </div>
                 </div>
@@ -74,13 +74,13 @@
             <div class="row">
                 <div class = "col-lg-5"></div>
                 <div class="col-lg-7 scr1-button-col">
-                    <button class="scr1-button">Получить бесплатную консультацию</button>
+                    <a class="scr1-button" href="#contact">Получить бесплатную консультацию</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="scr2">
+    <div id="service" class="scr2">
         <div class="row">
             <div class="col-lg-12 scr2-title">НАШИ УСЛУГИ</div>
         </div>
@@ -141,7 +141,7 @@
         <div class="row">
             <div class="col-lg-4"></div>
             <div class="col-lg-4 scr2-button-col">
-                <button class="scr2-button">Сделать заказ</button>
+                <a class="scr2-button" href="#contact">Сделать заказ</a>
             </div>
             <div class="col-lg-4"></div>
         </div>
@@ -230,42 +230,208 @@
         </div>
     </div>
 
-	<div class="scr-end">
-        <div class="row">
-            <div class="col-lg-3"></div>
-			<div class="col-lg-3 scr-end-social">
-                
+    <div id="shop" class="scr4">
+        <div class="row scr4-title-row">
+            <hr class="scr4-hr-top">
+                <div class="scr4-title">МАГАЗИН</div>
+            <hr class="scr4-hr-bottom">
+        </div>
+        <div id="carouselShop" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 scr4-carousel-img-col">
+                            <img style="width:100%; padding-right: 5vw;" src="images/shop_1.png">
+                        </div>
+                        <div class="col-lg-8 scr4-carousel-slide-right">
+                            <div class="scr4-carousel-slide-title">
+                                Digital эскиз (цифровой)
+                            </div>
+                            <div class="scr4-carousel-slide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed augue dictum, auctor tellus volutpat, tincidunt ante. Quisque vehicula, elit vestibulum aliquet vestibulum, nibh libero suscipit turpis, quis laoreet quam urna sed est. Morbi ac magna est. 
+                                <br><br>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer malesuada elit urna, vel efficitur metus sodales ut. Mauris dapibus tincidunt ultrices. 
+                                <br><br>
+                                Duis et leo semper magna euismod egestas. Nunc eleifend augue purus, et dictum nisl fermentum blandit. Integer ullamcorper sollicitudin magna ut aliquam.
+                            </div>
+                            <div class="scr4-carousel-slide-bottom">
+                                <div style="display: inline-block; align-self: flex-end;">
+                                    <div class="scr4-carousel-slide-price">от 1000 ₽</div>
+                                    <div class="scr4-carousel-slide-order">
+                                        <a class="scr4-carousel-slide-button" href="#contact">
+                                            Заказать!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 scr4-carousel-img-col">
+                            <img style="width:100%; padding-right: 5vw;" src="images/shop_2.png">
+                        </div>
+                        <div class="col-lg-8 scr4-carousel-slide-right">
+                            <div class="scr4-carousel-slide-title">
+                                Художественный фешн эскиз на бумаге
+                            </div>
+                            <div class="scr4-carousel-slide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed augue dictum, auctor tellus volutpat, tincidunt ante. Quisque vehicula, elit vestibulum aliquet vestibulum, nibh libero suscipit turpis, quis laoreet quam urna sed est. Morbi ac magna est. 
+                                <br><br>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer malesuada elit urna, vel efficitur metus sodales ut. Mauris dapibus tincidunt ultrices. 
+                                <br><br>
+                                Duis et leo semper magna euismod egestas. Nunc eleifend augue purus, et dictum nisl fermentum blandit. Integer ullamcorper sollicitudin magna ut aliquam.
+                            </div>
+                            <div class="scr4-carousel-slide-bottom">
+                                <div style="display: inline-block; align-self: flex-end;">
+                                    <div class="scr4-carousel-slide-price">от 2000 ₽</div>
+                                    <div class="scr4-carousel-slide-order">
+                                        <a class="scr4-carousel-slide-button" href="#contact">
+                                            Заказать!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 scr4-carousel-img-col">
+                            <img style="width:100%; padding-right: 5vw;" src="images/shop_3.png">
+                        </div>
+                        <div class="col-lg-8 scr4-carousel-slide-right">
+                            <div class="scr4-carousel-slide-title">
+                                Технический рисунок
+                            </div>
+                            <div class="scr4-carousel-slide-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed augue dictum, auctor tellus volutpat, tincidunt ante. Quisque vehicula, elit vestibulum aliquet vestibulum, nibh libero suscipit turpis, quis laoreet quam urna sed est. Morbi ac magna est. 
+                                <br><br>
+                                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer malesuada elit urna, vel efficitur metus sodales ut. Mauris dapibus tincidunt ultrices. 
+                                <br><br>
+                                Duis et leo semper magna euismod egestas. Nunc eleifend augue purus, et dictum nisl fermentum blandit. Integer ullamcorper sollicitudin magna ut aliquam.
+                            </div>
+                            <div class="scr4-carousel-slide-bottom">
+                                <div style="display: inline-block; align-self: flex-end;">
+                                    <div class="scr4-carousel-slide-price">от 5000 ₽</div>
+                                    <div class="scr4-carousel-slide-order">
+                                        <a class="scr4-carousel-slide-button" href="#contact">
+                                            Заказать!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <div class="arrow-left">
+                <a class="carousel-control-prev carousel-control-prev" href="#carouselShop" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="arrow-right">
+                <a class="carousel-control-next carousel-control-next" href="#carouselShop" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
     </div>
-    
-    <div class="scr-end-footer">
-        <div class="row scr-end-text">
+
+    <div class="scr5">
+        <div class="scr5-container">
+            <div class="row scr5-title-row">
+                <div class="col-lg-12">
+                    БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ КОНСТРУКТОРА
+                </div>
+            </div>
+            <div class="row scr5-text-row">
+                <div class="col-lg-12">
+                    поможем составить задание
+                </div>
+            </div>
+            <div class="row scr5-button-row">
+                <div class="col-lg-12">
+                    <a class="scr5-button" href="#contact">
+                        Получить консультацию конструктора
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="scr6">
+        <div class="row">
+            <div class="scr6-title">ГАЛЕРЕЯ РАБОТ</div>
+        </div>
+        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="scr6-img" src="images/gallery_1.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="scr6-img" src="images/gallery_2.png">
+                </div>
+                <div class="carousel-item">
+                    <img class="scr6-img" src="images/gallery_3.png">
+                </div>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <div class="arrow-left">
+                <a class="carousel-control-prev carousel-control-prev" href="#carouselGallery" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="arrow-right">
+                <a class="carousel-control-next carousel-control-prev" href="#carouselGallery" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+	<div id="contact" class="scr-end">
+        <div class="row" style="flex: 1 1 auto;">
+            <div class="col-lg-12">
+                <div class="scr-end-window">
+                    <div class="row scr-end-window-text">
+                        Как мы можем с Вами связаться? <br> Пожалуйста, оставьте свои контакты и мы ответим на все Ваши вопросы.  
+                    </div>
+                    <div class="row">
+                        <input id="nameInput" type="text" class="scr-end-window-input" placeholder="Как к Вам обращаться?">
+                    </div>
+                    <div class="row">
+                        <input id="phoneInput" type="text" class="scr-end-window-input" placeholder="Номер телефона">
+                    </div>
+                    <div class="row">
+                        <input id="emailInput" type="email" class="scr-end-window-input" placeholder="Адрес электронной почты">
+                    </div>
+                    <div class="row scr-end-window-button-row">
+                        <button id= "orderButton" class="scr-end-window-button">Получить бесплатную консультацию</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row scr-end-footer" style="flex: 0 1 auto;">
             <div class="col-lg-4">
-                <ul>
-                    КОНТАКТЫ<br>
-                    styleyou@styleyou.ru<br>
-                    8 (000) 000 00 00<br>
-                </ul>
+                КОНТАКТЫ<br>
+                styleyou@styleyou.ru<br>
+                8 (000) 000 00 00<br>
             </div>
             <div class="col-lg-4">
                 <div>МЫ В СОЦСЕТЯХ</div>
                 <img src="images/WhatsappVkTg.png" height="30">
             </div>
             <div class="col-lg-4">
-                <ul>
-                    ПОДПИШИСЬ<br>
-                    Скидка 10 % на услуги<br>
-                </ul>
+                ПОДПИШИСЬ<br>
+                Скидка 10 % на услуги<br>
             </div>
         </div>
     </div>
-        
-
-    
-
-
-	
-
 </body>
 </html>
